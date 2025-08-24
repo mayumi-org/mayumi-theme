@@ -1,6 +1,6 @@
 {
   "name": "@mayumi-org/mayumi-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A TailwindCSS plugin that provides Mayumi theme colors, utilities, and components",
   "packageManager": "pnpm@10.15.0",
   "main": "src/index.js",
