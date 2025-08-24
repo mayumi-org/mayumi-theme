@@ -1,0 +1,44 @@
+{
+  "name": "@mayumi-org/mayumi-theme",
+  "version": "0.0.1",
+  "description": "A TailwindCSS plugin that provides Mayumi theme colors, utilities, and components",
+  "packageManager": "pnpm@10.15.0",
+  "main": "src/index.js",
+  "keywords": [
+    "tailwindcss",
+    "plugin",
+    "theme",
+    "mayumi",
+    "ui",
+    "css"
+  ],
+  "scripts": {
+    "test": "echo test",
+    "release": "np --no-cleanup --yolo --no-publish --any-branch",
+    "ci:version": "pnpm changeset version",
+    "ci:publish": "pnpm changeset publish",
+    "ci:snapshot": "pnpm changeset version --snapshot beta",
+    "ci:prerelease": "pnpm changeset publish --tag beta"
+  },
+  "author": "JW",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mayumi-org/mayumi-theme.git"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.6",
+    "tailwindcss": "^3.4.0"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
